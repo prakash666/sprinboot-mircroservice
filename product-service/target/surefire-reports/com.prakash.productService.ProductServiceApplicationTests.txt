@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.prakash.productService.ProductServiceApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.207 s <<< FAILURE! - in com.prakash.productService.ProductServiceApplicationTests
-com.prakash.productService.ProductServiceApplicationTests.shouldCreateProduct  Time elapsed: 0.007 s  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.696 s <<< FAILURE! - in com.prakash.productService.ProductServiceApplicationTests
+com.prakash.productService.ProductServiceApplicationTests.shouldCreateProduct  Time elapsed: 0.005 s  <<< ERROR!
 java.lang.ExceptionInInitializerError
 	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method)
 	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1160)

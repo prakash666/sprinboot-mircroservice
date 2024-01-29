@@ -14,7 +14,6 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(DefaultException.class)
     public ResponseEntity<List<OrderModel>> handleDefaultException(DefaultException ex) {
-            // Handle as a list of OrderModel
             List<OrderModel> orderModels = new ArrayList<>();
             orderModels.add(new OrderModel(ex.getMessage()));
             return new ResponseEntity<>(orderModels, HttpStatus.INTERNAL_SERVER_ERROR);
