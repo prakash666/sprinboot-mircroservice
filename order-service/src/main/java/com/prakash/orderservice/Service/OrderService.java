@@ -26,9 +26,9 @@ import java.util.stream.Collectors;
 public class OrderService {
     private final OrderRepository orderRepository;
 
-    private final WebClient webClient;
+    private final WebClient.Builder webClient;
 
-    public OrderService(OrderRepository orderRepository, WebClient webClient) {
+    public OrderService(OrderRepository orderRepository, WebClient.Builder webClient) {
         this.orderRepository = orderRepository;
         this.webClient = webClient;
     }
@@ -47,8 +47,8 @@ public class OrderService {
 
           List<String> skuCodes =   orderEntity.getOrderLineItemsList ().stream ()
                     .map (orderLineItems -> orderLineItems.getSkuCode ()).collect(Collectors.toList());
-            InventoryResponseDto [] inventoryResponseDtos =     webClient.get ()
-                    .uri ("http://localhost:1010/api/inventory/code",uriBuilder -> uriBuilder.
+            InventoryResponseDto [] inventoryResponseDtos =  webClient.build().get ()
+                    .uri ("http://inventory-service/api/inventory/code",uriBuilder -> uriBuilder.
                             queryParam ("skuCode",skuCodes).build ())
                             .retrieve ()// This is used to get  or retrieve information from specified API
                                     .bodyToMono (InventoryResponseDto [].class)   // it is used to read data from web-client response we need to add body to mono method.

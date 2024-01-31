@@ -1,0 +1,13 @@
+com\prakash\inventoryService\DTO\InventoryRequestDto.class
+com\prakash\inventoryService\Repository\InventoryRepository.class
+com\prakash\inventoryService\Entity\InventoryEntity$InventoryEntityBuilder.class
+com\prakash\inventoryService\Controller\InventoryController.class
+com\prakash\inventoryService\DTO\InventoryResponseDto$InventoryResponseDtoBuilder.class
+com\prakash\inventoryService\DTO\InventoryRequestDto$InventoryRequestDtoBuilder.class
+com\prakash\inventoryService\DTO\InventoryResponseDto.class
+com\prakash\inventoryService\InventoryServiceApplication.class
+com\prakash\inventoryService\Service\InventoryService.class
+com\prakash\inventoryService\Model\ModelInventory.class
+com\prakash\inventoryService\ExceptionHandler\DefaultException.class
+com\prakash\inventoryService\Entity\InventoryEntity.class
+com\prakash\inventoryService\ExceptionHandler\GlobalExceptionHandler.class
